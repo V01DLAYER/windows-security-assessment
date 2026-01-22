@@ -25,7 +25,7 @@ No third-party tools were used. Everything was done using **Windows built-in sec
 
 ## 🛠️ Tools & Environment
 
-- Operating System: Windows 10 / Windows 11
+- Operating System: Windows 11
 - Tools Used:
   - Windows Security (Microsoft Defender interface)
   - Windows Firewall
