@@ -39,6 +39,37 @@ No third-party tools were used. Everything was done using **Windows built-in sec
 3. Identified potential security risks  
 4. Enabled or improved key security features  
 5. Captured evidence screenshots after changes  
-6. Documented observations in a structured report  
+6. Documented observations in a structured report
+
+## 📸 Evidence
+
+Screenshots included in this repository show:
+- Security settings before hardening
+- Enabled protection features
+- Final secured state of the system
+All screenshots were cropped to avoid exposing personal or sensitive information.
+
+## 🔐 Key Learnings
+
+- Default settings are not always optimal
+- Small configuration changes significantly improve security
+- Documentation is as important as implementation
+- Understanding basics is critical before advanced cybersecurity topics
+- 
+## 🚀 Next Steps
+
+- Advanced Windows hardening
+- Event Viewer & log analysis
+- Introduction to threat modeling
+- Blue team monitoring fundamentals
+
+## ⚠️ Disclaimer
+
+This project was performed on a personal system for **educational purposes only**.  
+No malicious activity, exploitation, or unauthorized access was involved.
+
+### Author
+**voidlayer**
+
 
 
