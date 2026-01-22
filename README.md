@@ -1,78 +1,44 @@
-# windows-security-assessment
-1. Antivirus Baseline
+# Windows Security Assessment & Hardening
 
-- Antivirus solution: McAfee (third-party)
-- Status: No action needed
-- Windows Defender: Managed by third-party antivirus
-- Observation: System relies on third-party AV for real-time protection
+This project is a hands-on Windows security assessment focused on understanding the default security posture of a Windows system and applying basic hardening techniques using built-in tools.
+The goal of this project is not automation or advanced exploitation, but learning how real systems are secured at the baseline level — something every cybersecurity professional must understand before moving forward.
 
-2. Firewall Baseline
+## 🎯 Objectives
 
-- Domain network firewall: ON (No action required)
-- Private network firewall: ON (No action required)
-- Public network firewall: ON (No action required)
-- Observation: Windows Defender Firewall is enabled across all network profiles.
+- Understand Windows default security settings
+- Identify weak or disabled security configurations
+- Apply basic hardening using native Windows features
+- Document changes clearly and professionally
+- Build a strong beginner-friendly cybersecurity project
 
-3. User Account Baseline
+## 🧠 Scope of the Project
 
-- Total number of user accounts: 1
-- Account type: Administrator + User
-- Authentication method: Microsoft account (email-based login)
-- Observation: Single administrator account used for daily activities. If compromised, attacker would gain full system-level access.
+This project covers the following areas:
+- Antivirus & malware protection status
+- Firewall configuration (Domain, Private, Public)
+- User account and privilege analysis
+- App & browser protection settings
+- Reputation-based protection assessment
+- Basic security hardening steps
+- Before-and-after comparison using screenshots
+No third-party tools were used. Everything was done using **Windows built-in security features**.
 
-4. App & Browser Control Baseline
+## 🛠️ Tools & Environment
 
-- Reputation-based protection: OFF
-- Observation: System does not currently block apps/files based on Microsoft’s cloud reputation.
-- Threat: Malicious or untrusted apps may run undetected.
+- Operating System: Windows 10 / Windows 11
+- Tools Used:
+  - Windows Security (Microsoft Defender interface)
+  - Windows Firewall
+  - Local User Accounts
+  - App & Browser Control
 
-5. Threat Modeling / Attack Surface
+## 📋 Methodology
 
-- Single admin account increases risk if compromised.
-- Public Wi-Fi usage may allow network attacks.
-- Third-party AV dependency; zero-day threats possible.
-- Outdated or vulnerable applications may be exploited.
-- Key threats considered: credential theft, malware persistence, unauthorized access.
-
-6. Hardening — Antivirus (Periodic Scanning)
-- Periodic scanning: Enabled
-- Observation: Windows Defender will perform additional scans alongside McAfee, providing layered protection.
-- Windows Update: Enabled
-- Observation: System receives security patches regularly, reducing vulnerability risk.
-
-6b. Hardening — Reputation-based Protection
-
-- Action: Enabled Reputation-based protection in App & Browser Control
-- Observation: System now blocks untrusted apps/files based on Microsoft’s cloud reputation.
-- Benefit: Reduces risk of malicious or untrusted applications running undetected.
-
-
-7. Admin Account Hardening
-
-- Sign-in method: Microsoft account with PIN / password
-- Observation: Strong authentication reduces risk of unauthorized access.
-
-7b. Admin Account Hardening — Standard Daily User
-
-- Created a separate standard user account: Daily User
-- Admin account will only be used for system changes
-- Observation: Separating admin from daily use reduces risk of full system compromise
-
-8. Final Security Posture Summary
-
-Before Hardening:
-- Reputation-based protection was disabled.
-- Single administrator account used for daily activities.
-- Limited layered protection due to reliance on third-party AV alone.
-
-After Hardening:
-- Reputation-based protection enabled to block untrusted apps.
-- Layered security achieved using both McAfee and Defender periodic scanning.
-- Separation of admin and daily user accounts reduces risk of full system compromise.
-
-Overall Impact:
-- Reduced malware execution risk.
-- Reduced privilege escalation impact.
-- Improved defense-in-depth on a Windows system.
+1. Established a **baseline security state** of the system  
+2. Documented existing configurations and gaps  
+3. Identified potential security risks  
+4. Enabled or improved key security features  
+5. Captured evidence screenshots after changes  
+6. Documented observations in a structured report  
 
 
